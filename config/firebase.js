@@ -3,10 +3,10 @@ import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { API_KEY } from '@env';
+
 
 const firebaseConfig = {
-  apiKey: API_KEY,
+  apiKey: "AIzaSyClgcnzYllZawghpTFKy4bPrPg3pDg2Ixs",
   authDomain: "campussecretlife.firebaseapp.com",
   projectId: "campussecretlife",
   storageBucket: "campussecretlife.firebasestorage.app",
