@@ -79,6 +79,7 @@ const MissionScreen = () => {
   // Load available and active missions
   useEffect(() => {
     if (user?.role) {
+      console.log('User Data:', user);
       // Listen for available missions
       const missionsQuery = query(collection(db, 'missions'), where('role', '==', user.role));
       const missionsUnsubscribe = onSnapshot(missionsQuery, (snapshot) => {

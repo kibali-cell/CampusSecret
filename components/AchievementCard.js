@@ -8,10 +8,10 @@ const AchievementCard = ({ achievement, progress, unlocked }) => {
   
   return (
     <View style={[styles.achievementCard, unlocked && styles.unlockedCard]}>
-      <Award 
+      {/* <Award 
         size={24} 
         color={unlocked ? '#FFD700' : '#A9A9A9'} 
-      />
+      /> */}
       <View style={styles.achievementInfo}>
         <Text style={styles.achievementTitle}>{achievement.title}</Text>
         <Text style={styles.achievementDesc}>{achievement.description}</Text>

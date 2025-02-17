@@ -1,35 +1,89 @@
 export const MISSION_TYPES = {
-    HERO: [
-      {
-        type: 'HELP',
-        missions: [
-          { title: 'Library Guide', description: 'Help someone find study materials', points: 100, duration: '1h' },
-          { title: 'Tech Support', description: 'Help someone with computer issues', points: 150, duration: '30m' },
-          { title: 'Campus Tour', description: 'Guide a lost student', points: 200, duration: '1h' }
-        ]
-      },
-      {
-        type: 'COMMUNITY',
-        missions: [
-          { title: 'Clean Drive', description: 'Organize a mini cleaning session', points: 300, duration: '2h' },
-          { title: 'Study Group', description: 'Form a study group for finals', points: 250, duration: '2h' }
-        ]
-      }
-    ],
-    CHAOS: [
-      {
-        type: 'PRANKS',
-        missions: [
-          { title: 'Backwards Day', description: 'Get 5 people to walk backwards', points: 100, duration: '1h' },
-          { title: 'Silent Library', description: 'Start a silent dance party', points: 200, duration: '30m' }
-        ]
-      },
-      {
-        type: 'TRENDS',
-        missions: [
-          { title: 'New Slang', description: 'Make a new word trend on campus', points: 150, duration: '4h' },
-          { title: 'Fashion Statement', description: 'Start a silly fashion trend', points: 200, duration: '1d' }
-        ]
-      }
-    ]
+  HERO: [
+    {
+      type: 'HELP',
+      templates: [
+        {
+          title: 'Library Hero',
+          description: 'Help someone find a book in the library. Take a selfie together (with permission).',
+          points: 50,
+          timeLimit: 24 * 60 * 60 * 1000, // 24 hours
+          requiresPhoto: true
+        },
+        {
+          title: 'Note Master',
+          description: 'Share your class notes with 3 people who missed class. Get their signatures.',
+          points: 30,
+          timeLimit: 48 * 60 * 60 * 1000,
+          requiresPhoto: true
+        },
+        {
+          title: 'Campus Clean-up',
+          description: 'Pick up 10 pieces of litter around campus. Document before/after.',
+          points: 40,
+          timeLimit: 24 * 60 * 60 * 1000,
+          requiresPhoto: true
+        }
+      ]
+    },
+    {
+      type: 'SOCIAL',
+      templates: [
+        {
+          title: 'Flash Study Group',
+          description: 'Organize an impromptu study group of 5+ people. Take a group photo.',
+          points: 60,
+          timeLimit: 3 * 60 * 60 * 1000,
+          requiresPhoto: true
+        },
+        {
+          title: 'Welcome Ambassador',
+          description: 'Help a lost-looking student find their way. Get a thank you note.',
+          points: 35,
+          timeLimit: 24 * 60 * 60 * 1000,
+          requiresPhoto: false
+        }
+      ]
+    }
+  ],
+  CHAOS: [
+    {
+      type: 'PRANKS',
+      templates: [
+        {
+          title: 'Reverse Day',
+          description: 'Convince 3 people to walk backwards to class. Film their participation.',
+          points: 45,
+          timeLimit: 24 * 60 * 60 * 1000,
+          requiresPhoto: true
+        },
+        {
+          title: 'Chair Artist',
+          description: 'Rearrange study room chairs into a funny pattern. Document your art.',
+          points: 25,
+          timeLimit: 12 * 60 * 60 * 1000,
+          requiresPhoto: true
+        }
+      ]
+    },
+    {
+      type: 'RUMORS',
+      templates: [
+        {
+          title: 'Trend Setter',
+          description: 'Start a harmless trend. Get 5 people to participate. Document evidence.',
+          points: 50,
+          timeLimit: 48 * 60 * 60 * 1000,
+          requiresPhoto: true
+        },
+        {
+          title: 'Mystery Event',
+          description: 'Create and post a funny fake event poster. Photograph reactions.',
+          points: 40,
+          timeLimit: 24 * 60 * 60 * 1000,
+          requiresPhoto: true
+        }
+      ]
+    }
+  ]
   };

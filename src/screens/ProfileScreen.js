@@ -6,6 +6,18 @@ import styles from '../../styles';
 const ProfileScreen = () => {
   const { user, logout } = useAuth();
 
+  if (!user) {
+    // Option 1: Show a simple message
+    return (
+      <View style={styles.container}>
+        <Text style={styles.title}>No user is logged in.</Text>
+      </View>
+    );
+    
+    // Option 2: Alternatively, you can navigate to the login screen
+    // or show a loading indicator until a user is available.
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Profile</Text>
