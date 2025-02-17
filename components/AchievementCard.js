@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Award } from 'lucide-react';
+import styles from '../styles';
 
 const AchievementCard = ({ achievement, progress, unlocked }) => {
   const progressPercent = Math.min((progress / achievement.requirement) * 100, 100);
