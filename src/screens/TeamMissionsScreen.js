@@ -3,6 +3,8 @@ import { View, Text, FlatList, TouchableOpacity, Alert } from 'react-native';
 import { TEAM_MISSIONS } from '../../models/teamMissions';
 import { useAuth } from '../context/AuthContext';
 import * as Location from 'expo-location';
+import { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion, collection, addDoc } from 'firebase/firestore';
+import styles from '../../styles';
 
 const TeamMissionScreen = () => {
   const { user } = useAuth();

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, FlatList, Text, Image } from 'react-native';
 import { useAuth } from '../context/AuthContext';
 import { getFirestore, collection, query, where, orderBy, limit, onSnapshot } from 'firebase/firestore';
+import styles from '../../styles';
 
 const MissionHistoryScreen = () => {
   const { user } = useAuth();

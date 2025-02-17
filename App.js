@@ -18,7 +18,7 @@ import ChatScreen from './src/screens/ChatScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import MissionHistoryScreen from './src/screens/MissionHistoryScreen';
 import AchievementsScreen from './src/screens/AchievementsScreen';
-import TeamMissionScreen from './src/screens/TeamMissions';
+import TeamMissionScreen from './src/screens/TeamMissionsScreen';
 import LeaderboardScreen from './src/screens/LeaderboardScreen';
 
 const TabNavigator = () => (

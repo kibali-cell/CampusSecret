@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { getFirestore, doc, getDoc, onSnapshot } from 'firebase/firestore';
 import { ACHIEVEMENTS } from '../../models/achievements';
 import AchievementCard from '../../components/AchievementCard';
+import styles from '../../styles';
 
 const AchievementsScreen = () => {
   const { user } = useAuth();
